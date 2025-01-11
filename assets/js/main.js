@@ -243,3 +243,85 @@
 
 
 })(jQuery);
+
+
+let all=1;
+let agency=1;
+let portfolio=1;
+let blog=1;
+let healthcare=1;
+let ngo=1;
+let single=1;
+let multiple=1;
+
+function loadAll(){
+	let pageName='all'+all+'.html';
+	$("#all").load(pageName);
+	all+=1;
+	if(all===2){
+		$('#allBtn').hide();
+	}
+}
+
+function loadAgency(){
+	let pageName='agency'+agency+'.html';
+	$("#agency").load(pageName);
+	agency+=1;
+	if(agency===2){
+		$('#agencyBtn').hide();
+	}
+}
+
+function loadPortfolio(){
+	let pageName='portfolio'+portfolio+'.html';
+	$("#portfolio").load(pageName);
+	portfolio+=1;
+	if(portfolio===2){
+		$('#portfolioBtn').hide();
+	}
+}
+
+function loadBlog(){
+	let pageName='blog'+blog+'.html';
+	$("#blog").load(pageName);
+	blog+=1;
+	if(blog===2){
+		$('#blogBtn').hide();
+	}
+}
+
+function loadHealthCare(){
+	let pageName='healthcare'+healthcare+'.html';
+	$("#healthcare").load(pageName);
+	healthcare+=1;
+	if(healthcare===2){
+		$('#healthcareBtn').hide();
+	}
+}
+
+function loadNgo(){
+	let pageName='ngo'+ngo+'.html';
+	$("#ngo").load(pageName);
+	ngo+=1;
+	if(ngo===2){
+		$('#ngoBtn').hide();
+	}
+}
+
+function loadSingle(){
+	let pageName='single'+single+'.html';
+	$("#single").load(pageName);
+	single+=1;
+	if(single===2){
+		$('#singleBtn').hide();
+	}
+}
+
+function loadMulti(){
+	let pageName='multi'+multi+'.html';
+	$("#multi").load(pageName);
+	multi+=1;
+	if(multi===2){
+		$('#multiBtn').hide();
+	}
+}
