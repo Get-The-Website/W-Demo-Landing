@@ -258,7 +258,7 @@ function loadAll(){
 	let pageName='all'+all+'.html';
 	$("#all").load(pageName);
 	all+=1;
-	if(all===2){
+	if(all===3){
 		$('#allBtn').hide();
 	}
 }
